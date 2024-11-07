@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="product1" />
+    <drawable name="product2" />
+    <drawable name="product3"/>
+</resources>

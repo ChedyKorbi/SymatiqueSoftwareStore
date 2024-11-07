@@ -1,0 +1,97 @@
+<!-- activity_cart.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg">
+
+    <!-- Toolbar -->
+
+    <!-- RecyclerView -->
+
+    <!-- Checkout Button -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_200"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:rotationX="-360"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Votre Panier"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:translationX="70dp" />
+
+        <!-- Cart icon -->
+        <ImageView
+            android:id="@+id/imageView_back"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="46dp"
+            android:paddingRight="26dp"
+            android:rotationX="2"
+            android:rotationY="6"
+            android:src="@drawable/ic_back"
+            android:translationX="-220dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="712dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <Button
+        android:id="@+id/button_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/teal_200"
+        android:padding="16dp"
+        android:text="Checkout"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:backgroundTint="#1ABCAD" />
+
+    <Button
+        android:id="@+id/button_emptycart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_checkout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onEmptyCartButtonClick"
+        android:padding="16dp"
+        android:text="Empty Cart"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:translationX="55dp"
+        android:translationY="-9dp"
+        app:backgroundTint="#1ABCAD" />
+
+</RelativeLayout>

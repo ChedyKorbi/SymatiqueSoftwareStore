@@ -1,0 +1,81 @@
+<!-- checkout_popup.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:translationY="-20dp">
+
+    <!-- Checkout Info -->
+
+    <!-- Cart Item RecyclerView -->
+
+    <!-- Close Icon -->
+
+
+    <ImageView
+        android:id="@+id/imageViewClose"
+        android:layout_width="95dp"
+        android:layout_height="88dp"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:contentDescription="Close Icon"
+        android:padding="0dp"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:src="@drawable/ic_x"
+        android:translationX="20dp" />
+
+    <TextView
+        android:id="@+id/textView_checkoutInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout Information"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:translationY="-70dp" />
+
+    <!-- Total Purchase Price -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartItemRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="16dp"
+        android:translationY="-30dp" />
+
+    <TextView
+        android:id="@+id/textView_totalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Montant Total  "
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Actual Total -->
+    <TextView
+        android:id="@+id/textView_actualTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual Total"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <!-- ID Client -->
+
+    <!-- Imprimer Facture Button -->
+    <Button
+        android:id="@+id/button_imprimerFacture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Imprimer Facture"
+        app:backgroundTint="#009688" />
+
+</LinearLayout>

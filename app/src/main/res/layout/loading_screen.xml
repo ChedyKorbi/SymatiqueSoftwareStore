@@ -1,0 +1,52 @@
+<!-- activity_loading.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    app:layout_collapseMode="none"
+
+    >
+
+    <!--android:src="@drawable/your_logo" Replace with your logo drawable -->
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="169dp"
+        android:layout_height="156dp"
+        android:src="@drawable/ic_logo"
+        android:translationX="110dp"
+        android:translationY="-48dp" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:width="600dp"
+        android:lineSpacingExtra="2dp"
+        android:text="symatique store Application"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        android:transformPivotY="0dp"
+        android:translationX="25dp"
+        android:translationY="120dp"
+        android:typeface="sans"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:visibility="visible"
+        app:autoSizeTextType="none" />
+
+    <Button
+        android:id="@+id/buttonCheckProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="144dp"
+        android:text="Check Our Products"
+        android:translationX="90dp"
+        app:background="@drawable/rounded_corner"
+        app:backgroundTint="#009688" />
+</RelativeLayout>
